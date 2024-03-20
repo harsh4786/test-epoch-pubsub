@@ -1,0 +1,16 @@
+[package]
+name = "test-epoch-pubsub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = "*"
+futures-util = "*"
+solana-client = {git = "https://github.com/tinydancer-io/solana-1.18", branch = "epoch-pubsub"}
+
+[patch.crates-io]
+solana-program = {git = "https://github.com/tinydancer-io/solana-1.18", branch = "epoch-pubsub"}
+solana-zk-token-sdk = {git = "https://github.com/tinydancer-io/solana-1.18", branch = "epoch-pubsub"}
+solana-client = {git = "https://github.com/tinydancer-io/solana-1.18", branch = "epoch-pubsub"}
